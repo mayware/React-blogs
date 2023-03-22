@@ -1,34 +1,16 @@
 {
-    "blogs": [
-        {
-            "id": 1,
-            "body": "Cool Games are: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, quod!",
-            "likes": "15",
-            "title": "Games"
-        },
-        {
-            "id": 2,
-            "body": "Movies to watch: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, quod!",
-            "likes": "5",
-            "title": "Movies"
-        },
-        {
-            "id": 3,
-            "body": "Important news are: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, quod!",
-            "likes": "15",
-            "title": "News"
-        },
-        {
-            "id": 4,
-            "body": "TV Shows to watch: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, quod!",
-            "likes": "35",
-            "title": "TV Shows"
-        },
-        {
-            "id": 5,
-            "body": "Useful videos are: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, quod!",
-            "likes": "10",
-            "title": "Videos"
-        }
-    ]
+  "blogs": [
+    {
+      "id": 5,
+      "body": "Useful videos are: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, quod!",
+      "likes": "10",
+      "title": "Videos"
+    },
+    {
+      "title": "Drinks",
+      "body": "Coca cola",
+      "likes": "excellent",
+      "id": 6
+    }
+  ]
 }

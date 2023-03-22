@@ -24,8 +24,8 @@ code {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-start;
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,8 +36,20 @@ code {
   z-index: 1000;
 }
 
+.header-title-link {
+  margin-right: 1rem;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: .3mm;
+  color: #ced4da;
+}
+
+.header-title-link:hover {
+  color: #29bf12;
+}
+
 .header-right-link {
-  margin: .5rem;
   padding: .5rem;
   font-size: 16px;
   font-weight: 700;
@@ -52,10 +64,10 @@ code {
 }
 
 .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 10px;
   padding: 1rem;
 }
 
@@ -67,9 +79,121 @@ code {
   border-radius: 5px;
   margin-bottom: 1rem;
   background: #cad2c5;
+}
+
+.blog-link {
+  text-decoration: none;
   color: #151515;
 }
 
 .blog-preview:hover {
   box-shadow: 0px 0px 15px #000;
+}
+
+.blog-article {
+  max-width: 600px;
+  padding: .5rem;
+  text-align: start;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background: #84a98c;
+}
+
+.add-blog-title {
+  color: #cad2c5;
+  margin-bottom: 1rem;
+}
+
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 1rem;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #000;
+  background: #2b2d42;
+}
+
+.title-field {
+  height: 35px;
+  border-radius: 5px;
+  background: #202020;
+  font-size: 16px;
+  color: #cad2c5;
+  margin-bottom: .5rem;
+  border: 1px solid #778da9;
+}
+
+.textarea-field {
+  height: 100px;
+  border-radius: 5px;
+  resize: none;
+  font-size: 16px;
+  background: #202020;
+  color: #cad2c5;
+  margin-bottom: .5rem;
+  border: 1px solid #778da9;
+}
+
+.select-field {
+  padding: .5rem;
+  height: 35px;
+  border-radius: 5px;
+  background: #202020;
+  color: #cad2c5;
+  margin-bottom: 1rem;
+  border: 1px solid #778da9;
+}
+
+.field-label {
+  color: #cad2c5;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: .3rem;
+}
+
+.add-blog-btn {
+  cursor: pointer;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  background: #014f86;
+  color: #cad2c5;
+}
+
+.add-blog-btn:hover {
+  background: #003566;
+}
+
+.delete-blog-btn {
+  margin-top: .5rem;
+  font-size: 16px;
+  font-weight: 500;
+  padding: .5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #e63946;
+  color: #cad2c5;
+}
+
+.delete-blog-btn:hover {
+  background: #d62828;
+}
+
+.home-page-link {
+  padding: .5rem;
+  border-radius: 5px;
+  background: #014f86;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #cad2c5;
+}
+
+.home-page-link:hover {
+  background: #003566;
 }

@@ -1,18 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <nav className="header">
             <div className="header-left">
-                <a href="/" className="header-title" style={{
-                    textDecoration: 'none',
-                    fontSize: 24,
-                    fontWeight: 700,
-                    letterSpacing: '.3mm',
-                    color: '#ced4da'
-                }}>Blogs</a>
+                <Link to="/" className="header-title-link">Blogs</Link>
             </div>
             <div className="header-right">
-                <a className="header-right-link" href="/">Home</a>
-                <a className="header-right-link" href="/create">New Blog</a>
+                <Link className="header-right-link" to="/create">Add Blog</Link>
             </div>
         </nav>
     );
